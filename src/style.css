@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .radiobox {
+    @apply w-full h-full rounded-lg bg-dark-primary shadow-md p-4 flex flex-col justify-center items-center  transition-all ease-in-out duration-500;
+  }
+  input:checked ~ .radiobox {
+    @apply text-dark-primary;
+  }
+  .radiobox-green {
+    @apply text-green-a700;
+  }
+  input:checked ~ .radiobox-green {
+    @apply bg-green-a700;
+  }
+  .radiobox-blue {
+    @apply text-blue-a700;
+  }
+  input:checked ~ .radiobox-blue {
+    @apply bg-blue-a700;
+  }
+  .radiobox-purple {
+    @apply text-purple-a700;
+  }
+  input:checked ~ .radiobox-purple {
+    @apply bg-purple-a700;
+  }
+  .radiobox-yellow {
+    @apply text-yellow-a700;
+  }
+  input:checked ~ .radiobox-yellow {
+    @apply bg-yellow-a700;
+  }
+}
